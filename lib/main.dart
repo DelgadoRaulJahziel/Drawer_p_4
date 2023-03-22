@@ -4,7 +4,7 @@ void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-  static const String _title = 'Drawer Radical';
+  static const String _title = 'Drawer Radical sisis';
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -83,6 +83,22 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.pop(context);
               },
             ),
+            AboutListTile(
+              // <-- SEE HERE
+              icon: Icon(
+                Icons.info,
+              ),
+              child: Text('About app'),
+              applicationIcon: Icon(
+                Icons.local_play,
+              ),
+              applicationName: 'My Cool App',
+              applicationVersion: '1.0.25',
+              applicationLegalese: '© 2019 Company',
+              aboutBoxChildren: [
+                ///Content goes here...
+              ],
+            )
           ],
         ),
       ),
